@@ -1,0 +1,16 @@
+if SHIELD_MYKEYBOARD_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Mykeyboard"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MYKEYBOARD_LEFT || SHIELD_MYKEYBOARD_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
